@@ -1,0 +1,313 @@
+@media (max-width: 1100px) {
+  .site-header {
+    position: relative;
+  }
+
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 14px 0;
+  }
+
+  .header-branding {
+    width: auto;
+    justify-content: flex-start;
+    min-width: 0;
+  }
+
+  .header-main {
+    width: auto;
+    align-items: center;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    top: calc(100% + 8px);
+    z-index: 60;
+    background: #0d1b2a;
+    border: 1px solid rgba(163, 190, 211, 0.24);
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 8, 18, 0.45);
+    padding: 18px 16px;
+  }
+
+  .site-nav.is-open {
+    display: block;
+  }
+
+  .site-nav ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .header-main {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-tools {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-grid,
+  .chassis-wrap,
+  .leasing-wrap,
+  .about-wrap,
+  .contacts-wrap,
+  .engine-layout,
+  .test-drive-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .product-detail__image {
+    aspect-ratio: 16 / 10;
+  }
+
+  .product-detail__image img {
+    height: 100%;
+    min-height: 0;
+  }
+
+  .builder-grid,
+  .industry-grid,
+  .support-grid,
+  .review-grid,
+  .cases-grid,
+  .model-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .builder-card:nth-child(-n + 3) {
+    grid-column: span 2;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .is-interior-page .site-nav {
+    display: none;
+  }
+
+  .is-interior-page .menu-toggle {
+    display: none;
+  }
+
+  .header-inner {
+    gap: 10px;
+    padding: 12px 0;
+  }
+
+  .header-branding {
+    flex: 1 1 auto;
+  }
+
+  .header-main {
+    flex: 0 0 auto;
+  }
+
+  .menu-toggle {
+    flex: 0 0 48px;
+  }
+
+  .site-nav {
+    left: 10px;
+    right: 10px;
+    padding: 12px;
+  }
+
+  .site-nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .nav-card {
+    width: 100%;
+  }
+
+  .nav-card a {
+    min-height: 48px;
+    padding: 10px 14px;
+    color: #edf2f5;
+    line-height: 1.25;
+  }
+
+  .nav-card.is-active,
+  .nav-card:hover,
+  .nav-card:focus-within {
+    background: #23415a;
+  }
+
+  .nav-card:hover a,
+  .nav-card:focus-within a,
+  .nav-card.is-active a {
+    color: #fff;
+  }
+
+  .nav-card.is-active {
+    background: #9f202c;
+    border-color: #d45b63;
+  }
+
+  .is-interior-page main {
+    padding-top: 0;
+  }
+
+  .section-shell {
+    padding: 64px 0;
+  }
+
+  .brand__text {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    letter-spacing: -0.05em;
+  }
+
+  .site-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .builder-grid,
+  .industry-grid,
+  .support-grid,
+  .review-grid,
+  .cases-grid,
+  .model-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-grid {
+    padding-top: 64px;
+    padding-bottom: 70px;
+  }
+
+  .benefits__photo,
+  .benefits__photo img {
+    min-height: 220px;
+  }
+
+  .hero__stats,
+  .hero__actions,
+  .model-card__actions,
+  .test-drive__benefits {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn,
+  .btn-small {
+    width: 100%;
+  }
+
+  .builder-card:nth-child(-n + 3),
+  .builder-card:nth-child(5),
+  .builder-card:nth-child(6),
+  .builder-card:nth-child(7) {
+    grid-column: span 1;
+  }
+
+  .floating-actions {
+    right: 12px;
+    bottom: 18px;
+  }
+
+  .page-back-wrap {
+    padding: 18px 0 0;
+  }
+
+  .page-back {
+    min-height: 44px;
+    padding: 0 14px;
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: clamp(2.15rem, 10vw, 3.2rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  h3 {
+    line-height: 1.2;
+  }
+
+  .section-heading {
+    margin-bottom: 24px;
+  }
+
+  .card,
+  .hero-form,
+  .leasing-form,
+  .contacts__form,
+  .engine__spec,
+  .engine__safety {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: min(var(--container), calc(100% - 20px));
+  }
+
+  .brand {
+    max-width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .hero-form,
+  .leasing-form,
+  .contacts__form,
+  .engine__spec,
+  .engine__safety {
+    padding: 18px 16px;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 11vw, 2.5rem);
+  }
+
+  .hero__visual img,
+  .model-card img,
+  .builder-card img,
+  .case-card img,
+  .review-card img,
+  .about-company__image img {
+    height: 220px;
+  }
+
+  .map-placeholder {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-inner {
+    gap: 8px;
+  }
+
+  .btn,
+  .btn-small {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
